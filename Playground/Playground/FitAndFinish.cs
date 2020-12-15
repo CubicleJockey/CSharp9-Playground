@@ -19,7 +19,7 @@ namespace Playground
         [TestMethod]
         public void OmittedTypeForNewAsParameter()
         {
-            Thingy thingy = new Thingy(1, nameof(Thingy), new());
+            var thingy = new Thingy(1, nameof(Thingy), new());
             thingy.Should().NotBeNull();
         }
 
